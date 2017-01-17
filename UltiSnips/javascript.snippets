@@ -1,0 +1,139 @@
+# -----------------Global snippets-------------------
+snippet if 
+if(${1}) {
+	${2}
+}
+endsnippet
+
+
+snippet ife
+if(${1}) {
+	${2}
+} else {
+	${3}
+}
+endsnippet
+
+
+
+
+
+
+
+
+
+# -----------------React.js-------------------
+snippet rc
+<${1} />${2}
+endsnippet
+
+snippet rdr
+ReactDOM.render(
+	${1}
+);
+endsnippet
+
+snippet rcc
+var React = require('react');
+var ${1} = React.createClass({
+    render: function () {
+        return (
+			${3}
+        );
+    }
+});
+
+module.exports = ${2};
+endsnippet
+
+#ReactComponentProps
+snippet rcp
+this.props.${1}
+endsnippet
+
+#ReactComponentState
+snippet rcs
+this.state.${1}
+endsnippet
+
+#ReactObjectReference
+snippet ror
+this.refs.${1}
+endsnippet
+
+#ReactFunctionDefaultProps
+snippet rfdp
+getDefaultProps: function () {
+	return { 
+		${1}
+	};
+},
+endsnippet
+
+#ReactFunctionInitialState
+snippet rfis
+getInitialState: function () {
+	return { 
+		${1}
+	};
+},
+endsnippet
+
+#ReactFunctionImport
+snippet rfi
+var ${1} = require('${2}');${3}
+endsnippet
+
+#ReactFunctionImportES6
+snippet rfI
+var {${1}} = require('${2}');${3}
+endsnippet
+
+#ReactElementLink
+snippet rel
+<Link to="${1}" activeClassName="active-link">${2}</Link>
+endsnippet
+
+#ReactElementIndexLink
+snippet reil
+<IndexLink to="${1}" activeClassName="active-link">${2}</IndexLink>
+endsnippet
+
+
+#ReactFunctionSetState
+snippet rfss
+this.setState({
+	${1}
+});
+endsnippet
+
+
+
+
+	
+
+
+# -----------------javascript-------------------
+
+snippet af
+function () {
+	${1}
+}
+endsnippet
+
+snippet pd
+function (e) {
+	e.preventDefault();
+	${1}
+}
+endsnippet
+
+snippet cl
+console.log(${1})${2}
+endsnippet
+
+
+snippet gid
+document.getElementById(${1});
+endsnippet
+
