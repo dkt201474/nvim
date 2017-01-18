@@ -7,7 +7,8 @@ Plug 'junegunn/goyo.vim'
 Plug 'mhinz/vim-startify'
 
 "Productivity
-" Plug 'vimwiki/vimwiki'
+Plug 'vimwiki/vimwiki'
+Plug 'itchyny/calendar.vim'
 
 "Color
 Plug 'w0ng/vim-hybrid'
@@ -20,11 +21,11 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
-Plug 'easymotion/vim-easymotion'
 
 "" Search
 Plug 'vim-scripts/grep.vim'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'easymotion/vim-easymotion'
 
 
 "Git
@@ -33,9 +34,13 @@ Plug 'airblade/vim-gitgutter'
 
 
 ""Intellisence
+Plug 'xolox/vim-misc'
 Plug 'ervandew/supertab'
 Plug 'neomake/neomake'
 Plug 'Shougo/deoplete.nvim'
+Plug 'majutsushi/tagbar'
+Plug 'xolox/vim-easytags'
+Plug 'majutsushi/tagbar'
 
 
 ""Snippets

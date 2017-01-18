@@ -8,15 +8,31 @@ let g:UltiSnipsEditSplit="vertical"
 cnoreabbrev snips UltiSnipsEdit
 
 
+"-----------vimwiki----------------------------------------
+augroup VimWikiRUles
+  autocmd!
+  autocmd BufReadPre *.wiki cnoremap <leader>wb Vimwiki2HTMLBrowse
+augroup END
+
+let g:vimwiki_list = [{'path': '~/Dropbox/nvim/vimwiki/', 'path_html': '~/Dropbox/nvim/vimwiki/html/'}]
 
 "------------Intellisense----------------------------------"
 "neomake
-autocmd! BufWritePost * Neomake
+
+autocmd BufWritePost * Neomake
+let g:neomake_javascript_enabled_makers = ['eslint']
+
+
 
 "deoplete
 let g:deoplete#enable_at_startup = 1
 
 
+"easytag
+cnoreabbrev ut UpdateTags
+
+"tagbar
+cnoreabbrev tbv TagbarToggle
 
 
 "------------Search----------------------------------"
@@ -65,7 +81,6 @@ nnoremap <silent> <F2> :NERDTreeFind<CR>
 noremap <F3> :NERDTreeToggle<CR>
 
 
-"------------Vim wiki----------------------------------"
 
 
 "------------Visual settings----------------------------------"

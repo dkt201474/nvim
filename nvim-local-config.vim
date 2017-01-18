@@ -68,3 +68,7 @@ augroup PhpRules
     autocmd!
     autocmd FileType php inoremap <Leader>n <Esc>:call IPhpInsertUse()<CR>
 augroup END
+
+
+"------------Vim wiki----------------------------------"
+autocmd BufReadPre, BufWritePost *.wiki <leader>wt :Vimwiki2HTML
