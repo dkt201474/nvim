@@ -97,5 +97,5 @@ Plug 'mxw/vim-jsx'
 
 
 "--------------React.js-----------------------
-Plug 'klen/python-mode'
+" Plug 'klen/python-mode'
 

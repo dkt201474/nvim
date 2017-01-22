@@ -21,6 +21,9 @@ let g:vimwiki_list = [{'path': '~/Dropbox/nvim/vimwiki/', 'path_html': '~/Dropbo
 
 autocmd BufWritePost * Neomake
 let g:neomake_javascript_enabled_makers = ['eslint']
+autocmd InsertChange,TextChanged * update | Neomake
+set undodir=~/.config/nvim/undodir
+set undofile
 
 
 
@@ -32,7 +35,7 @@ let g:deoplete#enable_at_startup = 1
 cnoreabbrev ut UpdateTags
 
 "tagbar
-cnoreabbrev tbv TagbarToggle
+noremap <f4> :TagbarToggle <CR>
 
 
 "------------Search----------------------------------"
@@ -183,7 +186,7 @@ let g:go_highlight_build_constraints = 1
 let g:go_list_type = "quickfix"
 let g:go_fmt_command = "goimports"
 let g:go_play_open_browser = 0
-
+let g:go_get_update = 0
 
 augroup GolangRules
     autocmd!
