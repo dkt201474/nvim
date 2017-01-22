@@ -7,8 +7,8 @@ Plug 'junegunn/goyo.vim'
 Plug 'mhinz/vim-startify'
 
 "Productivity
-Plug 'vimwiki/vimwiki'
-Plug 'itchyny/calendar.vim'
+" Plug 'vimwiki/vimwiki'
+" Plug 'itchyny/calendar.vim'
 
 "Color
 Plug 'w0ng/vim-hybrid'
@@ -40,7 +40,6 @@ Plug 'neomake/neomake'
 Plug 'Shougo/deoplete.nvim'
 Plug 'majutsushi/tagbar'
 Plug 'xolox/vim-easytags'
-Plug 'majutsushi/tagbar'
 
 
 ""Snippets
